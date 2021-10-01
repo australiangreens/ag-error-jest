@@ -1,9 +1,31 @@
+# Maybe I should just not use talisman :S
+
 fileignoreconfig:
-- filename: yarn.lock
-  checksum: 07a4d6ef85ebdd1bf5bd501836b27a8894b9b181755babc03952f649117af7b6
-- filename: src/matchers/toBeValidAgErrorClass.ts
-  checksum: 1147dd98abae2dc2f5db7bad351a36c3014ee7a1f2a36e4a5d07c5394ae8fe7c
-- filename: src/matchers/toBeValidAgErrorClassIndependentOfSourceName.ts
-  checksum: 5c69e9f7da227362c8e750781451b3669a1032814550cf4c50dbb9767d0ad630
-- filename: src/matchers/toBeValidAgErrorObject.ts
-  checksum: df4dd6e80ce780008048891ed6191eb77332c3d448451b6d676d969ff3f03bac
+  - filename: yarn.lock
+    checksum: 07a4d6ef85ebdd1bf5bd501836b27a8894b9b181755babc03952f649117af7b6
+  - filename: src/matchers/toBeValidAgErrorClass.ts
+    checksum: 1147dd98abae2dc2f5db7bad351a36c3014ee7a1f2a36e4a5d07c5394ae8fe7c
+  - filename: src/matchers/toBeValidAgErrorClassIndependentOfSourceName.ts
+    checksum: 5c69e9f7da227362c8e750781451b3669a1032814550cf4c50dbb9767d0ad630
+  - filename: src/matchers/toBeValidAgErrorObject.ts
+    checksum: df4dd6e80ce780008048891ed6191eb77332c3d448451b6d676d969ff3f03bac
+  - filename: dist/commonjs/matchers/toBeValidAgErrorClass.d.ts
+    checksum: 2a82de13b08792680b9f6d1e06ca721c73f28d62c5a16c3fb89caf99402495a7
+  - filename: dist/esm/matchers/toBeValidAgErrorClassIndependentOfSourceName.d.ts
+    checksum: 4222bcb1305e9400492a51ac70fdf58bf221a2d9245dd5237c0b91dc5b5f003d
+  - filename: dist/commonjs/matchers/toBeValidAgErrorClassIndependentOfSourceName.d.ts
+    checksum: 2ab7370c2135519a9523229aba6449a183918f70aca1e80801190afd35dc83ad
+  - filename: dist/esm/matchers/toBeValidAgErrorClass.js
+    checksum: 24e9fc3e498b2b87f7532c3051e84594152497a95a6a0dd3b441b4dcfa227d33
+  - filename: dist/esm/matchers/toBeValidAgErrorClass.d.ts
+    checksum: 27af9a917e59927ef8a4ba5f5eec727374f30df27d7f635c3c7265eeaf8b84f7
+  - filename: dist/esm/matchers/toBeValidAgErrorClassIndependentOfSourceName.js
+    checksum: e27a050b6a8a08491bf21d7d4b48c174127216e5ff864b6370540db353e992b4
+  - filename: dist/esm/matchers/toBeValidAgErrorObject.js
+    checksum: 55a8aff2474904e4069b43dc8a749a1a2fad22899b7d6190d63ceef390ad7f6d
+  - filename: dist/commonjs/matchers/toBeValidAgErrorClass.js
+    checksum: aef21609d3546359905ae3b61900a964102a60332a29fc59943599c10f2f24ff
+  - filename: dist/commonjs/matchers/toBeValidAgErrorObject.js
+    checksum: 4316ded7592ccc3d263b43babb9b8b1e491e0c7a0f00b92c86eb64251aff0d35
+  - filename: dist/commonjs/matchers/toBeValidAgErrorClassIndependentOfSourceName.js
+    checksum: dd245939989a90e05c1c4a7cdddf006a1b753139bc0293d188daa6c821806048

@@ -5,7 +5,9 @@
 
 # Node artifact files
 node_modules/
-dist/
+# For now we need to include dist in the source control, until we set up proper
+# postinstall scripts
+# dist/
 
 # May contain secrets, but also machine-specific settings
 .env
@@ -29,7 +31,6 @@ dist/
 
 # Maven
 target/
-dist/
 
 # JetBrains IDE
 .idea/
