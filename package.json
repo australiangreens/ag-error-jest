@@ -1,0 +1,36 @@
+{
+  "name": "ag-error-jest",
+  "version": "0.1.0",
+  "description": "Provides jest matchers to simplify testing of subclasses of AgErrors from the ag-error package",
+  "author": "The Australian Greens <webops@greens.org.au>",
+  "contributors": [
+    "Anthony Blond <anthony@unfinishedteleporter.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "main": "./dist/commonjs/index.js",
+  "types": "./dist/commonjs/index.d.ts",
+  "module": "./dist/esm/index.js",
+  "sideEffects": [
+    "dist/commonjs/jest/index.js",
+    "dist/esm/jest/index.js"
+  ],
+  "scripts": {
+    "build:esm": "tsc --project ./tsconfig.json",
+    "build:commonjs": "tsc --project ./tsconfig-commonjs.json",
+    "build": "yarn build:esm && yarn build:commonjs",
+    "build:force": "rm -r ./dist; yarn build:esm && yarn build:commonjs",
+    "eslint": "eslint --max-warnings 0 src"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.10.2",
+    "@typescript-eslint/eslint-plugin": "^4.29.2",
+    "@typescript-eslint/parser": "^4.29.2",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-tsdoc": "^0.2.14",
+    "typescript": "^4.3.5"
+  }
+}
