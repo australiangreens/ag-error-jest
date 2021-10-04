@@ -79,3 +79,7 @@ test('CiviApiAxiosError meets requirements to be a valid AgError', () => {
   expect(dummy.name).not.toEqual(dummy.constructor.name);
 });
 ```
+
+## About the build process
+
+TODO

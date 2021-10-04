@@ -1,6 +1,6 @@
 {
   "name": "ag-error-jest",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Provides jest matchers to simplify testing of subclasses of AgErrors from the ag-error package",
   "author": "The Australian Greens <webops@greens.org.au>",
   "contributors": [
@@ -8,18 +8,24 @@
   ],
   "license": "MIT",
   "private": true,
-  "main": "./dist/commonjs/index.js",
-  "types": "./dist/commonjs/index.d.ts",
+  "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "types": "./dist/esm/index.d.ts",
   "sideEffects": [
-    "dist/commonjs/jest/index.js",
+    "dist/cjs/jest/index.js",
     "dist/esm/jest/index.js"
   ],
   "scripts": {
     "build:esm": "tsc --project ./tsconfig.json",
-    "build:commonjs": "tsc --project ./tsconfig-commonjs.json",
-    "build": "yarn build:esm && yarn build:commonjs",
-    "build:force": "rm -r ./dist; yarn build:esm && yarn build:commonjs",
+    "build:cjs": "tsc --project ./tsconfig-cjs.json",
+    "build": "yarn build:esm && yarn build:cjs && ./fixup.sh",
+    "build:force": "rm -r ./dist; yarn build:esm && yarn build:cjs && ./fixup.sh",
     "eslint": "eslint --max-warnings 0 src"
   },
   "devDependencies": {
