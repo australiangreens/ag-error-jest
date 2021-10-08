@@ -6,7 +6,17 @@ themselves.
 
 ## Installation
 
-TODO: At time of writing we are using private git repositories, not npm
+With npm:
+
+```sh
+npm install --save-dev @australiangreens/ag-error-jest
+```
+
+With yarn:
+
+```sh
+yarn add --dev @australiangreens/ag-error-jest
+```
 
 ## Setup
 
@@ -92,7 +102,11 @@ To achive this, we use the hybrid module pattern described here:
 We make a few changes however:
 
 - For the directory in dist we use "esm" instead of "mjs"
-- Rather than using a separate `tsconfig-base.json`, just `tsconfig.json` contain the ESM definition and have `tsconfig-cjs.son` extend and override it.
+- Rather than using a separate `tsconfig-base.json`, just `tsconfig.json`
+  contain the ESM definition and have `tsconfig-cjs.son` extend and override it.
 - In `tsconfig-cjs.json`, add `declaration": false`.
 
-The reasoning for last point is that we don't need the declaration files in both places; they are basically just for editor hinting. [the handbook](https://www.typescriptlang.org/docs/handbook/declaration-files/templates/module-d-ts.html) states  "The .d.ts syntax intentionally looks like ES Modules syntax", so it makes more sense to put the declarations in the esm directory.
+The reasoning for last point is that we don't need the declaration files in both
+places; they are basically just for editor hinting. [the handbook](https://www.typescriptlang.org/docs/handbook/declaration-files/templates/module-d-ts.html)
+states  "The .d.ts syntax intentionally looks like ES Modules syntax", so it
+makes more sense to put the declarations in the esm directory.
