@@ -7,7 +7,8 @@
     "Anthony Blond <anthony@unfinishedteleporter.com>"
   ],
   "license": "MIT",
-  "private": false,
+  "homepage": "https://github.com/australiangreens/ag-error-jest#readme",
+  "repository": "github:australiangreens/ag-error-jest",
   "files": [
     "dist",
     "src"
