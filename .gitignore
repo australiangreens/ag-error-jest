@@ -5,9 +5,7 @@
 
 # Node artifact files
 node_modules/
-# For now we need to include dist in the source control, until we set up proper
-# postinstall scripts
-# dist/
+dist/
 
 # May contain secrets, but also machine-specific settings
 .env
