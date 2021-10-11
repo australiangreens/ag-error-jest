@@ -31,7 +31,8 @@
     "build:cjs": "tsc --project ./tsconfig-cjs.json",
     "build": "yarn build:esm && yarn build:cjs && ./fixup.sh",
     "build:force": "rm -r ./dist; yarn build:esm && yarn build:cjs && ./fixup.sh",
-    "eslint": "eslint --max-warnings 0 src"
+    "eslint": "eslint --max-warnings 0 src",
+    "prepack": "yarn eslint && yarn build:force"
   },
   "devDependencies": {
     "@types/jest": "^27.0.2",
