@@ -1,8 +1,8 @@
 # ag-error-jest
 
 Provides jest matchers to simplify testing of subclasses of AgErrors from the
-ag-error package. See the ag-error readme for more detail about AgErrors
-themselves.
+[ag-error](https://www.npmjs.com/package/@australiangreens/ag-error) package.
+See the ag-error readme for more detail about AgErrors themselves.
 
 ## Installation
 
@@ -31,7 +31,7 @@ For example in `jest.config.js`:
 ```js
 export default {
   //...
-  "setupFilesAfterEnv": ["ag-error-jest"],
+  "setupFilesAfterEnv": ["@australiangreens/ag-error-jest"],
   //...
 }
 ```
@@ -40,7 +40,7 @@ Alternatively if you already have a `./src/setupTests.ts` in your
 `setupFilesAfterEnv`, then you and add an import into that intead:
 
 ```ts
-import 'ag-error-test';
+import '@australiangreens/ag-error-test';
 ```
 
 ## Usage
