@@ -1,6 +1,7 @@
 import { IAgError } from './IAgError';
 
 export function toBeValidAgErrorObject(
+  this: jest.MatcherContext,
   errObj: IAgError,
   name: string,
   hierarchicalName: string,

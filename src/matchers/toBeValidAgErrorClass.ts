@@ -3,6 +3,7 @@ import { toBeValidAgErrorObject } from './toBeValidAgErrorObject';
 import { toBeValidAgErrorClassIndependentOfSourceName } from './toBeValidAgErrorClassIndependentOfSourceName';
 
 export function toBeValidAgErrorClass(
+  this: jest.MatcherContext,
   ReceivedClass: IAgError,
   name: string,
   hierarchicalName: string,

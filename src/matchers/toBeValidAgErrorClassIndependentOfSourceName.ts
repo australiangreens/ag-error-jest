@@ -5,6 +5,7 @@ import { IAgError } from './IAgError';
 // (sort of) emulate this by deliberately breaking our own rules using a name
 // that does not match the class to make sure the correct one is being used.
 export function toBeValidAgErrorClassIndependentOfSourceName(
+  this: jest.MatcherContext,
   ReceivedClass: IAgError,
 ) {
   if (this.isNot) {

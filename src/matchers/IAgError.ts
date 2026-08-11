@@ -5,7 +5,6 @@
 // workflows, but we'll just use a compatible interface for now.
 
 export interface IAgError extends Error {
-  // eslint-disable-next-line @typescript-eslint/no-misused-new
   new(message?: string): IAgError;
 
   name: string;
